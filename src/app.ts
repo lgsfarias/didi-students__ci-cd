@@ -29,4 +29,9 @@ app.get('/students/random', async (req: Request, res: Response) => {
   }
 });
 
+app.get('/health', async (req: Request, res: Response) => {
+  console.log('new feature');
+  res.sendStatus(200);
+});
+
 export default app;
